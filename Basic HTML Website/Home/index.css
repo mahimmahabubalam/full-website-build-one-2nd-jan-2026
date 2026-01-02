@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #fafafa;
+    color: #222;
+}
+ 
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 60px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-left {
+    display: flex;
+    gap: 36px;
+}
+.nav-left a {
+    text-decoration: none;
+    color: #111;
+    position: relative;
+    padding-bottom: 6px;
+}
+.nav-left a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #c9b89c;
+    transition: width 0.3s ease;
+}
+
+.nav-left a:hover::after {
+    width: 100%;
+}
+.nav-left .active::after {
+    width: 15px;
+}
+
+/* logo */
+/* Style for the logo container */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;  /* Space between the icon and text */
+}
+
+/* Style for the logo icon */
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for the logo image */
+.logo-icon img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Style for the text part of the logo */
+.logo-text {
+  font-family: 'Monospace', sans-serif;
+  font-size: 18px;
+  color: #111;  /* You can adjust this to fit your design */
+}
+
+/* RIGHT ICONS */
+.nav-right {
+    display: flex;
+    gap: 18px;
+
+}
+.nav-right a {
+    color: #111;
+    font-size: 18px;
+  transition: opacity 0.2s ease;
+}
+
+.nav-right a:hover {
+  opacity: 0.6;
+}
+
+/* Hero */
+.hero {
+    padding: 120px 60px 80px;
+    max-width: 900px;
+}
+
+.eyebrow {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color:#777;
+    margin-bottom:16px;
+}
+
+.hero h1 {
+    font-size: 56px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+.hero-text {
+  max-width: 520px;
+  color: #555;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border: 1px solid #222;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+/* DIVIDER */
+hr {
+  border: none;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 80px 60px;
+}
+
+/* PHILOSOPHY */
+.philosophy {
+  display: flex;
+  gap: 60px;
+  padding: 0 60px 100px;
+  max-width: 1000px;
+}
+
+.philosophy h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.philosophy p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.points p {
+  font-size: 15px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  padding: 20px 0;
+  background-color: #f1f1f1; /* You can change the background color */
+}
+
+footer p {
+  margin: 5px 0;
+}
